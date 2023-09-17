@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="XA-UA-Compatible" content="IE-Edge">
+    <meta name="viewport" content=" width=device-width, initial-scale=1.0">
+    <title>RU's Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    
+<script>
+$function() 
+  $('a[href*="#"]:not([href="#"])').click(function() {
+  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    if (target.length) {
+      $('html,body').animate({
+        scrollTop: target.offset().top
+      }, 1000);
+      return false;
+    }
+  }
+}); 
+</script>
+
+</head>
+
+<body>
+  <div class="scroll-up">
+    <a href="#top">
+        <img src="images/up.png" alt="Scroll Up Icon">
+        <span class="arrow-text">UP</span>
+    </a>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      const scrollUpButton = document.querySelector(".scroll-up");
+  
+      window.addEventListener("scroll", function() {
+          if (window.pageYOffset > 100) {
+              scrollUpButton.classList.add("active");
+          } else {
+              scrollUpButton.classList.remove("active");
+          }
+      });
+  });
+  </script>
+  
+<div id="header">
+    
+      
+        <nav class="navbar">
+           <img src="images/1.png" class="logo">
+
+            <ul id="sidemenu">
+                <li><a href="# ">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <img src="images/close.png" class="fas" onclick="closemenu()">
+              </ul>
+              <img src="images/menu1.png" class="fas" onclick="openmenu()">
+                
+        </nav>
+        
+        
+      <div class="header-text">
+        <!--<p class="about">ABOUT</p>-->
+        <h1>Hi, I am <span> Rucha Bhujbal.</span><br> Welcome to my <span1>Portfolio.</span>
+        </h1>
+        <img src="images/toto.gif" class="doodle-hi" alt="hi there">
+        
+    </div>
+  </div>
+</div>
+    <div class="down-arrow-container">
+      <div class="down-arrow">
+        <a href="#about">
+          <img src="images/arrow.png" alt="Arrow Icon" class="arrow-icon">
+          <span class="arrow-text">Know Me</span>
+        </a>
+      </div>
+    </div>
+    
+<!----------------------about------------------->
+    <div id="about">
+        <div class="container">
+          <div class="down-arrow"></div>
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/2img.gif" class="default-image" >
+                    <!--<img class="responsive-image" src="images/about_res.gif" alt="Responsive Image">-->
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="head">About Me</h1>
+                    <p class="subtitle"><br>Hello! I'm Rucha, a coding enthusiast with a keen interest in user interface (UI) and user experience (UX) design. I enjoy learning about the latest technologies, and right now, I'm particularly intrigued by AI and deep learning. <br> </p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links "onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>coding languages</span><br> -OOP JAVA<br> -C<br> -Python<br> -PostgreSQL   </li>
+                        <li><span>web development </span><br>-HTML<br>-CSS<br> -JS</li>
+                        <li><span>languages</span><br>-French (B1)   </li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Fresher</span><br>    </li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018</span><br>10th From St.Joseph's Convent,Pune</li>
+                        <li><span>2020</span><br>12th From Modern College Of Art, Science & Commerce,Pune</li>
+                        <li><span>2023</span><br>BSC CS Graduation From MIT Arts, Science and Commerce,Alandi ,Pune</li>
+                        <li><span>2022</span><br>French B1 From Alliance Francaise de Pune</li>                    
+                    </ul>
+                </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------contact------------->
+   <div id="contact">
+    
+            <div class="contact_us_green">
+                <div class="responsive-container-block big-container">
+                  <div class="responsive-container-block container">
+                    
+                    <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-5 wk-ipadp-10" id="ifgi">
+                      <div class="container-box">
+                      
+                        <div class="text-content">
+                          <p class="text-blk contactus-head">
+                            Contact Me
+                          </p>
+                          <p class="text-blk contactus-subhead">
+                           You can reach me through the following links!
+                          </p>
+                        </div>
+                        <div class="workik-contact-bigbox">
+                          <div class="workik-contact-box">
+                            <div class="phone text-box">
+                              <a href="tel:+919373308146">
+                              <img class="contact-svg" src="images/phone.png">
+                            </a>
+                              <p class="contact-text">
+                                +91 93733 08146
+                              </p>
+                            </div>
+                            <div class="address text-box">
+                              <img class="contact-svg" src="images/gmail.png">
+                              <p class="contact-text">
+                                bhujbal.rucha1403@gmail.com
+                              </p>
+                            </div>
+                            <div class="mail text-box">
+                              <img class="contact-svg" src="images/placeholder.png">
+                              <p class="contact-text">
+                                Pune, Maharashtra,India.
+                              </p>
+                            </div>
+                            
+                          </div>
+                          <div class="social-media-links">
+
+                            <a href="mailto:bhujbal.ruhca1403@gmail.com">
+                              <img class="social-svg" id="is9ym" src="images/email.png">
+                            </a>
+                            <a href="https://www.instagram.com/_ruuchaa/">
+                              <img class="social-svg" id="ib9ve" src="images/int.png">
+                            </a>
+                            <a href="https://www.linkedin.com/in/rucha-bhujbal-536a50225/">
+                              <img class="social-svg" id="ie9fx" src="images/ld.png">
+                            </a>
+                            <a href="https://github.com/ivyru14">
+                                <img class="social-svg" id="ie9fx" src="images/git.png">
+                              </a>
+
+                          </div>
+                        </div>
+                        </div>  
+                        </div>
+                      </div>
+                    </div>
+                   <!-- <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-7 wk-ipadp-10 line">
+                      <!-- Add your image here -->
+                     <!-- <img src="images/img3.jpg" alt="Your Image">-->
+                  </div>
+                </div>
+              </div>
+
+<!-- ----------------------popup------------------------------>
+
+<!-- ---------------------------copyright----------------------------------- -->
+<footer>
+  <div class="copyright">
+      <p>&copy; 2023 <img src="images/heart.png " src="images/copy.png" alt="Copyright Icon"> Rucha Bhujbal</p>
+  </div>
+</footer>
+    <script>
+       
+       var tablinks    = document.getElementsByClassName("tab-links");
+       var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents)
+            {  
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+
+          sidemenu.style.right = "0";
+
+        }
+
+        function closemenu(){
+          sidemenu.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
+</html>

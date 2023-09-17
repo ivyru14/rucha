@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects-Rucha</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <!-- -------------------HEADER-------------------------- -->
+
+
+    <div id="header">
+        <div class="container">
+          
+            <nav>
+               <!--<img src="images/logo2.png" class="logo">-->
+    
+                <ul>
+                    <li><a href="index.html">Back Home</a></li>
+                    
+                    </ul>
+            </nav>
+            
+            
+          <div class="header-text">
+            <!--<h1>Hi, I am <span> Rucha Bhujbal.</span><br> Welcome to my Portfolio.</h1>-->
+            <h1>Nothing to see yet! </h1>
+            <p class="about">Have tea, while you're here!!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------------Gallery--------------------------------- -->
+    <div class="gallery">
+        <div class="container">
+   <h1>MY PICTURES</h1>
+        </div>
+    </div>
+
+    <footer>
+        <div class="copyright">
+            <p>&copy; 2023 <img src="images/heart.png " src="images/copy.png" alt="Copyright Icon"> Rucha Bhujbal</p>
+        </div>
+
+
+</footer>
+<script>
+   
+   var tablinks    = document.getElementsByClassName("tab-links");
+   var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname)
+    {
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents)
+        {  
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:monospace;
+    box-sizing: border-box;
+}
+
+body{
+    background: #EAE6E2;
+    color: black;
+    /*scroll-behavior: smooth;*/
+}
+
+
+/*----------------------HEADER-------------------------*/
+
+#header{
+    width:100%;
+    height:100vh; 
+    /*background-color: #FAF9F8;*/
+    background-image: url(images/wait.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 5px 5%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.logo{
+    width:150px;
+    padding-left: 30px;
+    padding-top: 20px;;
+
+}
+
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+
+nav ul li a{
+    color: rgb(11, 39, 7);
+    text-decoration: none;
+    font-size: 25px ;
+    position: relative;
+
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #f61339;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition:0.5s;
+
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+
+.header-text{
+    margin-top: 80px;
+    font-size: 25px;
+
+}
+.about{
+  padding-left: 30px;
+    font-weight: bolder;
+}
+
+.header-text h1{
+    margin-top: 80px;
+    font-size: 60px;
+    /*padding-top: 5%;*/
+    padding-left: 30px;
+}
+
+.header-text h1 span{
+     color:#da292c;
+
+}
+
+footer {
+    background-color: #4d534c13; /* Adjust the background color */
+    color:#143007; /* Text color */
+    padding: 20px; /* Adjust padding as needed */
+    text-align: center; /* Center-align the content */
+  }
+  
+  .copyright {
+    font-size: 16px; /* Adjust the font size */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .copyright img {
+    width: 16px; /* Adjust the image width */
+    height: 16px; /* Adjust the image height */
+    vertical-align: middle; /* Align the image vertically with the text */
+    margin-right: 5px; /* Add spacing between the image and text */
+  }
+  
