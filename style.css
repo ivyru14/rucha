@@ -531,11 +531,9 @@ nav .fas{
 @media screen and (max-device-width:640px), screen and (max-width:640px) {
   #contact {
     width:600px;
-    background-image: url('images/img22.jpg'); /* Replace with your image path */
-    background-size: cover; /* Adjust to your preference */
-    background-position: center; /* Adjust to your preference */
-    background-repeat: no-repeat; /* Prevent image from repeating */
-    }
+    background-image: url('images/bgi2.jpg');
+
+  }
   .contact_us_green .text-blk.contactus-head {
       font-size: 40px;
       line-height: 40px;
