@@ -556,7 +556,7 @@ nav .fas{
 }
 
 /* Adjustments for mobile devices */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .contact_us_green .responsive-container-block.container {
       padding: 20px;
   }
