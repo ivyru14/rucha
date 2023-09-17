@@ -434,18 +434,20 @@ margin-right: 5px; /* Add spacing between the image and text */
 nav .fas{
   display: none;
 }
-@media only screen and (max-width:768px){
+@media only screen and (max-width:600px){
 
   #header{
+    width:600px;
     background-image: url('images/bgi2.jpg');
     background-size: cover;
-
+    
+    
   }
 
   .header-text{
     margin-left: .5%;
-    margin-top: 17%;
-    font-size: 20px;
+    margin-top: 5%;
+    font-size: 15px;
   }
   .header-text h1{
     font-size: 40px;
@@ -461,7 +463,9 @@ nav .fas{
   }
 
   nav ul{
+
     background: #EAE6E2;
+    background:transparent;
     position: fixed;
     top: 0;
     right: -200px;
@@ -485,11 +489,23 @@ nav .fas{
     
 
   }
+<<<<<<< HEAD
+#about{
+  width:600px;
+}
+  .head{
+    font-size:50px;
+  }
+  .subtitle{
+    font-size: 30px;
+    width: fit-content;
+=======
   .head{
     font-size:12px;
   }
   .subtitle{
     font-size: 10px;
+>>>>>>> e12b48ea9f1dd2c7a9e28ce578790ae2991a35ce
   }
 
   .about-col-1, .about-col-2{
