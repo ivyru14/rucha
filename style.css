@@ -530,6 +530,7 @@ nav .fas{
 }
 @media screen and (max-device-width:640px), screen and (max-width:640px) {
   #contact {
+    width:600px;
     background-image: url('images/img22.jpg'); /* Replace with your image path */
     background-size: cover; /* Adjust to your preference */
     background-position: center; /* Adjust to your preference */
