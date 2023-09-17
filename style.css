@@ -485,13 +485,19 @@ nav .fas{
     
 
   }
-
+  .head{
+    font-size:12px;
+  }
   .subtitle{
-    font-size: 40px;
+    font-size: 10px;
   }
 
   .about-col-1, .about-col-2{
     flex-basis: 100%;
+  }
+  .tab-contents{
+  font-size:10px;
+    
   }
 
   .about-col-1{
