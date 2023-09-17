@@ -434,7 +434,7 @@ margin-right: 5px; /* Add spacing between the image and text */
 nav .fas{
   display: none;
 }
-@media only screen and (max-width:600px){
+@media screen and (max-device-width:640px), screen and (max-width:640px){
 
   #header{
     width:600px;
@@ -465,7 +465,6 @@ nav .fas{
   nav ul{
 
     background: #EAE6E2;
-    background:transparent;
     position: fixed;
     top: 0;
     right: -200px;
@@ -529,8 +528,7 @@ nav .fas{
   }
 
 }
-
-@media (max-width: 768px) {
+@media screen and (max-device-width:640px), screen and (max-width:640px) {
   #contact {
     background-image: url('images/img22.jpg'); /* Replace with your image path */
     background-size: cover; /* Adjust to your preference */
@@ -577,7 +575,7 @@ nav .fas{
 }
 
 /* Adjustments for mobile devices */
-@media (max-width: 768px) {
+@media screen and (max-device-width:640px), screen and (max-width:640px) {
   .contact_us_green .responsive-container-block.container {
       padding: 20px;
   }
